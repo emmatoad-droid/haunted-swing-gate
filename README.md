@@ -1,69 +1,78 @@
-```
-// ---------------------------------------------------------
-// HauntedSwingGate
-//
-// The swing is not magical.
-// The swing is a NAND gate.
-// The swing is a portal.
-//
-// Portal opens when:
-//   NOT (present AND forcing)
-//
-// Which means:
-//   - you're not here AND not trying → portal
-//   - you're not here AND trying → portal
-//   - you're here AND not trying → portal
-//   - you're here AND trying → just a swing
-//
-// The swing interprets your momentum.
-// The swing remembers being ten.
-// ---------------------------------------------------------
-```
+# Dish Swing
 
-## What This Is
+Dish Swing is a creative coding project exploring memory,
+observation and recursion through software.
 
-A Rust implementation of the HauntedSwingGate—a three-state logic system that models the moment when childhood memory becomes present again.
+Across Rust, Haskell, Swift, and Java the same symbolic world is
+implemented in different programming languages.
 
-The swing is:
-- **A NAND gate** (logical structure)
-- **A portal** (threshold between states)
-- **A memory** (what the observer brings + what the swing is)
+The swing is not simply an object.
 
-## The Logic
+It is:
+• a memory carrier
+• a recursive system
+• an observer of time
+• a place where code and poetry overlap
 
-```
-Portal opens when: NOT (present AND forcing)
-```
+Nothing here is production software.
 
-**Four cases:**
-1. You're here AND trying → **just a swing** (gate closed)
-2. You're not here AND not trying → **portal opens** (memory space)
-3. You're not here AND trying → **portal opens** (nostalgia)
-4. You're here AND not trying → **portal opens** (surrender opens the door)
-
-## Running It
-
-```bash
-cargo run
-```
-
-The output shows three scenarios of the swing opening and closing its portal.
-
-## The Memory
-
-The swing's value comes from two sources:
-
-1. **What the observer brings** — how you read the motion, what you remember
-2. **What the swing contributes** — just existing in the wind, just being a swing
-
-Together they equal: **"I remember being ten."**
-
-## The Still Patch Truth
-
-> The portal only opens when you aren't trying to force it.
-
-That's not mystical. That's how NAND gates work. That's how childhood works. That's how surrender works.
+Everything here is an experiment.
 
 ---
 
-*The sky was close once. The swing remembers.*
+## Architecture
+
+Every implementation follows the same core loop:
+
+```
+Memory
+    ↓
+Evaluate Gate
+    ↓
+Interpret (or don't)
+    ↓
+Recurse
+```
+
+Each language expresses this in its own idiom, but the shape survives
+the translation. That consistency is the point.
+
+---
+
+## Implementations
+
+### Haskell
+Two perspectives on the haunted world:
+- `haskell/HauntedSwingGate.hs` — Observer interprets haunting through presence/forcing gates
+- `haskell/HauntedGarden.hs` — Garden remembers through interaction with invisible forces
+
+### Java
+- `java/HauntedSwingGate.java` — Modern Java (21) with sealed types and records
+
+### Swift
+- `swift/HauntedSwingGate.swift` — Recursive state machine with enum gates and struct memory
+
+### Rust
+Modular exploration of physics and emergence:
+- `rust/src/main.rs` — Entry point
+- `rust/src/world.rs` — State container
+- `rust/src/swing.rs` — Physics update
+- `rust/src/memory.rs` — Accumulation
+- `rust/src/observer.rs` — Interpretation
+- `rust/src/weather.rs` — Environment
+- `rust/src/render.rs` — Display
+- `rust/src/sprite.rs` — Jenkins (the heckler)
+
+---
+
+## The Observation
+
+The swing moves in the wind. You watch it.
+
+As a child, you *were* the swing — the flip in your stomach, the belief
+that you could touch the sky.
+
+As an adult, you *observe* the empty swing. The ghost of motion. The
+memory triggered by seeing, not doing.
+
+The observation is value.
